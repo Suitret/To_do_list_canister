@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "my_factorial_backend": {
+      "main": "src/my_factorial_backend/main.mo",
+      "type": "motoko"
+    },
+    "my_factorial_frontend": {
+      "dependencies": [
+        "my_factorial_backend"
+      ],
+      "source": [
+        "src/my_factorial_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "my_factorial_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
